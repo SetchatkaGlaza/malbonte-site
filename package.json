@@ -1,0 +1,11 @@
+{
+  "name": "malbonte-site",
+  "version": "1.0.0",
+  "description": "Сайт-визитка Мальбонте из «Клуба Романтики: Секрет Небес»",
+  "scripts": {
+    "start": "serve . -l tcp://0.0.0.0:${PORT:-3000}"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

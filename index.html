@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мальбонте — сын ангела и демона</title>
+<meta name="description" content="Мальбонте из «Клуба Романтики: Секрет Небес»: первый выживший сын ангела и демона. История, характер, хроника, образ и все развязки.">
+<meta name="theme-color" content="#060508">
+<meta property="og:title" content="Мальбонте — сын ангела и демона">
+<meta property="og:description" content="Свет и тьма в одном существе. Досье на самого противоречивого героя «Секрета Небес».">
+<meta property="og:image" content="assets/portrait.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060508;--bg2:#0d0a10;--tx:#e6e3ea;--mu:#a9a5b3;--red:#b3283a;--teal:#38e8d4;--sil:#c9ccd6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:400 18px/1.85 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--red);color:#fff}
+h1,h2,h3,blockquote{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;color:#fff;line-height:1.05}
+h1{font-size:clamp(60px,9vw,128px);font-style:italic}
+h2{font-size:clamp(38px,5vw,64px);margin-bottom:.45em}
+p{max-width:34em}p+p{margin-top:1em}
+.eyebrow{display:block;font:600 13px/1 Manrope,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--red);margin-bottom:1.4em}
+.sub{font-family:"Cormorant Garamond",serif;font-size:clamp(24px,3vw,34px);color:var(--teal);margin:.3em 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 6vw}
+.wide{max-width:980px;margin:0 auto}
+.hero{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center;max-width:1180px;margin:0 auto;padding:6vh 6vw}
+.btn{display:inline-block;margin-top:1.8em;padding:14px 30px;border:1px solid var(--red);border-radius:99px;color:#fff;text-decoration:none;font-weight:500;transition:background .3s,box-shadow .3s,transform .2s}
+.btn:hover,.btn:focus-visible{background:var(--red);outline:none;box-shadow:0 0 40px #b3283a88}
+.btn.ghost{margin-left:12px;border-color:#ffffff33}
+.btn.ghost:hover{background:#ffffff14;box-shadow:none}
+.fr{position:relative;margin:0;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 0 0 1px #b3283a66,0 30px 80px #000,0 0 90px #b3283a26}
+.fr img,.fr video{display:block;width:100%;height:100%;object-fit:cover}
+.p23{aspect-ratio:2/3}.l32{aspect-ratio:3/2}
+.hv{height:min(86vh,780px);height:min(86svh,780px);aspect-ratio:9/16;justify-self:center;cursor:pointer}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;padding:12vh 0}
+.row.rev>:first-child{order:2}
+.band{position:relative;min-height:75vh;display:grid;place-items:center;overflow:hidden;text-align:center;padding:10vh 6vw}
+.band video{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;filter:brightness(.5);will-change:transform}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(var(--bg),#06050866 25%,#06050866 75%,var(--bg))}
+.band>div{position:relative;z-index:1}
+.band blockquote{font-size:clamp(34px,6vw,76px);font-style:italic;max-width:14em;text-shadow:0 2px 30px #000}
+.band cite{display:block;margin-top:1.2em;color:var(--mu);font-style:normal;font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5vw;margin-top:3.5vh}
+.st{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:34px 0;border-top:1px solid #ffffff22}
+.st h3{font-size:34px;color:var(--teal)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.6em}
+.chips span{padding:7px 18px;border:1px solid #b3283a99;border-radius:99px;font-size:15px;transition:background .3s}
+.chips span:hover{background:#b3283a44}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:5vh}
+.tri figcaption{margin-top:12px;color:var(--mu);font-size:15px;text-align:center}
+.end{text-align:center;padding:12vh 6vw 6vh}
+.end .fr{width:min(380px,86vw);margin:0 auto 6vh}
+.end p{margin:0 auto}
+.end h2{font-size:clamp(56px,9vw,120px);font-style:italic}
+footer{padding:6vh 6vw 12vh;text-align:center;font-size:14px;color:var(--mu);border-top:1px solid #ffffff14}
+footer b{font:italic 500 28px "Cormorant Garamond",serif;color:#fff;display:block;margin-bottom:.3em}
+footer a{color:var(--teal);text-decoration:none}
+#mu{position:fixed;right:20px;bottom:20px;z-index:40;background:#060508ee;color:#fff;border:1px solid var(--red);border-radius:99px;padding:12px 20px;font:inherit;font-size:15px;cursor:pointer;transition:border-color .3s}
+#mu:hover,#mu:focus-visible{border-color:var(--teal);outline:none}
+#up{position:fixed;right:20px;bottom:76px;z-index:40;width:46px;height:46px;border-radius:50%;border:1px solid #ffffff33;background:#060508ee;color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .4s,border-color .3s}
+#up.on{opacity:1;pointer-events:auto}#up:hover{border-color:var(--teal)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+[data-miss]{min-height:220px;display:grid;place-items:center;border:1px dashed var(--red)}
+[data-miss]::after{content:"Не найден файл: " attr(data-miss);padding:16px;text-align:center}
+
+body>*:not(.fx):not(#gl):not(nav):not(#mu):not(#pg):not(#up):not(#pre):not(#em){position:relative;z-index:1}
+.fx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#em{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.fe{position:absolute;top:-12vh;background:url(assets/feathers.png) center/contain no-repeat;opacity:.5;will-change:transform;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(70px,115vh,0) rotate(300deg)}}
+#gl{position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;background:radial-gradient(#38e8d41c,transparent 65%);pointer-events:none;z-index:0;will-change:transform}
+#pg{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--red),var(--teal));z-index:60}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:center;gap:clamp(14px,2.4vw,34px);padding:16px 5vw;background:#060508f2;border-bottom:1px solid #ffffff14;transform:translateY(-100%);transition:transform .45s}
+nav.on{transform:none}
+nav a{color:var(--mu);text-decoration:none;font-size:15px;padding:3px 1px;border-bottom:1px solid transparent;white-space:nowrap;transition:color .3s,border-color .3s}
+nav a.on,nav a:hover{color:#fff;border-color:var(--red)}
+#pre{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:opacity .9s,visibility .9s}
+#pre.out{opacity:0;visibility:hidden}
+#pre span{font:italic 500 clamp(40px,7vw,84px) "Cormorant Garamond",serif;color:#fff;letter-spacing:.04em;animation:pulse 1.6s ease-in-out infinite}
+#pre i{position:absolute;bottom:38vh;width:140px;height:1px;background:linear-gradient(90deg,transparent,var(--teal),transparent);animation:sl 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}@keyframes sl{50%{width:260px}}
+h1 span{display:inline-block;animation:up .9s both}
+@keyframes up{from{opacity:0;transform:translateY(34px)}}
+.hero .sub,.hero p,.hero .btn{animation:up 1s .9s both}
+.cue{position:absolute;bottom:3vh;left:50%;transform:translateX(-50%);width:22px;height:38px;border:1px solid #ffffff55;border-radius:12px;z-index:2}
+.cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--teal);animation:cue 1.8s infinite}
+@keyframes cue{60%{transform:translateY(12px);opacity:0}}
+.hero{position:relative}
+.fr{transition:transform .35s ease}
+.mq{overflow:hidden;border-block:1px solid #ffffff1a;padding:16px 0;white-space:nowrap}
+.mq div{display:inline-block;font:italic 500 clamp(28px,4vw,48px) "Cormorant Garamond",serif;color:#ffffff33;animation:mq 45s linear infinite}
+.mq.r div{animation-direction:reverse;color:#b3283a55}
+@keyframes mq{to{transform:translateX(-50%)}}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw;text-align:center;padding:2vh 0 8vh}
+.facts b{display:block;font:italic 500 clamp(56px,8vw,104px)/1 "Cormorant Garamond",serif;color:var(--teal)}
+.facts span{color:var(--mu);font-size:16px;display:block;max-width:14em;margin:.5em auto 0}
+.lead{font-size:clamp(22px,2.6vw,30px);line-height:1.6;max-width:26em;font-family:"Cormorant Garamond",serif;color:#fff}
+details{border-top:1px solid #ffffff22;padding:22px 0}details:last-of-type{border-bottom:1px solid #ffffff22}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font:500 clamp(26px,3vw,34px) "Cormorant Garamond",serif;color:#fff}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--teal);font-size:36px;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:.8em;animation:up .5s}
+.cr{display:grid;text-align:center;min-height:240px;margin-top:4vh}
+.cr blockquote{grid-area:1/1;opacity:0;transition:opacity .9s;font-size:clamp(28px,4.4vw,52px);font-style:italic;max-width:17em;margin:auto}
+.cr blockquote.on{opacity:1}
+.dots{display:flex;gap:12px;justify-content:center;margin-top:3vh}
+.dots button{width:13px;height:13px;border-radius:50%;border:1px solid var(--teal);background:none;cursor:pointer;padding:0}
+.dots button.on{background:var(--teal)}
+.note{color:var(--mu);font-size:15px;margin-top:1.4em}
+
+/* две стороны */
+.tabs{display:flex;gap:10px;margin:4vh 0 0;flex-wrap:wrap}
+.tabs button{font:500 16px Manrope,sans-serif;padding:11px 26px;border-radius:99px;border:1px solid #ffffff33;background:none;color:var(--mu);cursor:pointer;transition:all .3s}
+.tabs button.on{color:#fff;border-color:var(--teal);box-shadow:0 0 30px #38e8d426}
+.tabs button[data-t="1"].on{border-color:var(--red);box-shadow:0 0 30px #b3283a44}
+.pane{display:none;padding:28px 0;animation:up .6s}
+.pane.on{display:block}
+.pane h3{font-size:36px;margin-bottom:.3em}
+.pane[data-p="0"] h3{color:var(--teal)}.pane[data-p="1"] h3{color:#e8576b}
+.pane ul{list-style:none;padding:0;margin-top:1em;display:grid;gap:8px;max-width:34em}
+.pane li{padding-left:22px;position:relative;color:var(--mu)}
+.pane li::before{content:"";position:absolute;left:0;top:.8em;width:8px;height:1px;background:var(--teal)}
+.pane[data-p="1"] li::before{background:var(--red)}
+
+/* хроника */
+.tl{position:relative;margin-top:5vh;padding-left:38px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--red),var(--teal))}
+.tl>div{position:relative;padding:0 0 38px}
+.tl>div::before{content:"";position:absolute;left:-38px;top:9px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:1px solid var(--teal);box-shadow:0 0 0 0 #38e8d466;transition:background .4s,box-shadow .6s}
+.tl>div.in::before{background:var(--teal);box-shadow:0 0 0 8px #38e8d412}
+.tl small{display:block;font:600 12px Manrope,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.tl h3{font-size:30px;margin-bottom:.2em}
+.tl p{color:var(--mu);font-size:17px}
+
+/* год */
+.year{margin-top:5vh}
+.bar{position:relative;height:14px;border-radius:99px;background:#ffffff12;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--teal),#fff);box-shadow:0 0 24px var(--teal);transition:width 2.4s cubic-bezier(.2,.8,.2,1)}
+.bar.in i{width:.9%;min-width:5px}
+.year .cap{display:flex;justify-content:space-between;color:var(--mu);font-size:14px;margin-top:10px}
+.year .cap b{color:var(--teal);font-weight:500}
+
+/* образ */
+.pal{display:flex;gap:14px;margin-top:2em}
+.pal i{width:54px;height:54px;border-radius:50%;border:1px solid #ffffff2e;display:block;position:relative;transition:transform .3s}
+.pal i:hover{transform:translateY(-6px) scale(1.08)}
+.pal i::after{content:attr(data-n);position:absolute;top:62px;left:50%;transform:translateX(-50%);font:12px Manrope,sans-serif;color:var(--mu);white-space:nowrap}
+.pal+p{margin-top:3.4em}
+
+/* развязки */
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:4vh;position:relative}
+.eg div{padding:30px;border:1px solid #b3283a66;border-radius:14px;background:var(--bg2);transition:border-color .3s,transform .3s,filter .6s,opacity .6s}
+.eg div:hover{border-color:var(--teal);transform:translateY(-4px)}
+.eg h3{font-size:28px;margin-bottom:.3em}
+.eg .no{display:block;font:italic 500 56px/1 "Cormorant Garamond",serif;color:#b3283a88;margin-bottom:.1em}
+.eg.hid div{filter:blur(9px);opacity:.5;pointer-events:none;user-select:none}
+.rev-btn{display:block;margin:4vh auto 0;font:500 16px Manrope,sans-serif;color:#fff;background:none;border:1px solid var(--red);border-radius:99px;padding:13px 30px;cursor:pointer;transition:all .3s}
+.rev-btn:hover{background:var(--red);box-shadow:0 0 40px #b3283a88}
+
+/* путь-сезоны активнее */
+.st{transition:background .4s,padding .4s}
+.st:hover{background:linear-gradient(90deg,#b3283a14,transparent);padding-left:14px}
+
+@media(max-width:860px){
+.hero,.row,.two{grid-template-columns:1fr}.hero{gap:5vh;padding-top:8vh}.hv{height:auto;width:min(340px,86vw)}
+.row{padding:8vh 0}.row.rev>:first-child{order:0}.st{grid-template-columns:1fr;gap:4px}
+.tri{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:68%;overflow-x:auto;scroll-snap-type:x mandatory}.tri>*{scroll-snap-align:center}
+nav{justify-content:flex-start;overflow-x:auto}.eg{grid-template-columns:1fr}.facts span{font-size:14px}.cue{display:none}.btn.ghost{margin:12px 0 0}}
+@media(prefers-reduced-motion:reduce){.rv{transform:none;opacity:1}h1 span,.mq div,.fe,.hero .sub,.hero p,.hero .btn{animation:none}html{scroll-behavior:auto}#em{display:none}}
+</style></head><body>
+<div id="pre"><i></i><span>Мальбонте</span></div>
+<button id="mu" aria-pressed="false">♪ Включить музыку</button>
+<button id="up" aria-label="Наверх">↑</button>
+<div id="pg"></div><canvas id="em"></canvas><div class="fx" id="fx"></div><div id="gl"></div>
+<nav><a href="#story">История</a><a href="#sides">Две стороны</a><a href="#chron">Хроника</a><a href="#path">Путь</a><a href="#nature">Характер</a><a href="#look">Образ</a><a href="#ends">Развязки</a></nav>
+
+<header class="hero">
+<div>
+<span class="eyebrow">Секрет Небес</span>
+<h1>Мальбонте</h1>
+<p class="sub">Сын ангела и демона</p>
+<p>Самый противоречивый герой «Секрета Небес»: антагонист, возможный возлюбленный и тот, кто хотел переписать порядок двух миров.</p>
+<a class="btn" href="#story">Читать историю</a><a class="btn ghost" href="#ends">Все развязки</a>
+</div>
+<figure class="fr hv" title="Нажмите, чтобы пересмотреть"><video id="hv" src="assets/hero.mp4" poster="assets/frame-a.png" autoplay muted playsinline></video></figure>
+<span class="cue" aria-hidden="true"></span>
+</header>
+<div class="mq" aria-hidden="true"><div>Сын ангела и демона &nbsp;—&nbsp; Первый из выживших &nbsp;—&nbsp; Свет и тьма в одном существе &nbsp;—&nbsp; Сын ангела и демона &nbsp;—&nbsp; Первый из выживших &nbsp;—&nbsp; Свет и тьма в одном существе &nbsp;—&nbsp;</div></div>
+
+<main id="story" class="wrap" style="scroll-margin-top:60px">
+<section class="row rv">
+<div><span class="eyebrow">Глава I</span><h2>Первый из выживших</h2>
+<p>Он родился в союзе ангела и демона. До него все дети таких союзов умирали через несколько часов после рождения. Он выжил и стал первым.</p>
+<p>С раннего детства в нём проявились необычайные способности. Он считал, что демонов несправедливо ставят ниже ангелов, и верил, что без войны между двумя мирами этого не исправить.</p></div>
+<figure class="fr p23"><img src="assets/portrait.png" alt="Портрет Мальбонте"></figure>
+</section>
+<section class="facts rv"><div><b data-n="3">0</b><span>сезона истории с его участием</span></div><div><b data-n="2">0</b><span>стороны одного существа</span></div><div><b data-n="1">0</b><span>выживший ребёнок ангела и демона</span></div></section>
+</main>
+
+<section class="band"><video src="assets/sky.mp4" poster="assets/sky.png" data-v data-par muted loop playsinline></video>
+<div><blockquote>Тьма разрушает, а не созидает.</blockquote><cite>Мальбонте, «Секрет Небес»</cite></div></section>
+
+<div class="wrap">
+<section class="wide rv" id="sides" style="padding:12vh 0 6vh;scroll-margin-top:60px">
+<span class="eyebrow">Глава II</span>
+<h2>Свет, отделённый от тьмы</h2>
+<figure class="fr l32"><img src="assets/two-sides.png" alt="Две стороны Мальбонте"></figure>
+<div class="two"><p>Шепфа почувствовал исходящую от него угрозу и решил его уничтожить, но не смог убить его ангельскую сторону. Тогда светлую часть отделили от тёмной.</p>
+<p>Так появился Бонт, «мальчик с башни». Он веками спал взаперти, а потом о нём узнали студенты. Позже обе половины снова соединили, и Мальбонте вернулся.</p></div>
+<div class="tabs" role="tablist"><button class="on" data-t="0" role="tab">Бонт · свет</button><button data-t="1" role="tab">Мальбонте · тьма</button></div>
+<div class="pane on" data-p="0"><h3>Бонт, мальчик с башни</h3><p>Светлая, ангельская половина. Её не удалось убить, поэтому её заперли и оставили спать.</p>
+<ul><li>веками спал взаперти в башне</li><li>о нём узнали студенты, и тайна перестала быть тайной</li><li>в финале второго сезона воссоединяется с тёмной стороной</li></ul></div>
+<div class="pane" data-p="1"><h3>Мальбонте, тёмная сторона</h3><p>Демоническая половина, амбиция и воля, которые не принимают существующий порядок.</p>
+<ul><li>считает, что демонов несправедливо ставят ниже ангелов</li><li>уверен, что без войны двух миров ничего не исправить</li><li>проводит ритуал, который соединяет две половины</li></ul></div>
+</section>
+
+<section class="wide rv" style="padding:8vh 0">
+<span class="eyebrow">Глава III</span>
+<h2>Несколько минут в год</h2>
+<p class="lead">Пока он был в заточении, он следил за судьбой родителей, которых отправили на землю.</p>
+<p>Лишь на несколько минут в год ему удавалось прорваться сквозь бесконечную пелену тьмы и взглянуть на их жизнь. Так продолжалось до самой их смерти. Возможно, именно там, в одиночестве, и родилась его уверенность, что мир устроен неправильно.</p>
+<div class="year"><div class="bar"><i></i></div><div class="cap"><span><b>несколько минут</b> света</span><span>525 600 минут в году</span></div></div>
+</section>
+
+<section class="wide rv" id="chron" style="padding:8vh 0;scroll-margin-top:60px">
+<span class="eyebrow">Хроника</span>
+<h2>Жизнь по порядку</h2>
+<div class="tl">
+<div><small>Рождение</small><h3>Ребёнок ангела и демона</h3><p>Дети таких союзов не жили дольше нескольких часов. Он стал исключением.</p></div>
+<div><small>Детство</small><h3>Необычайные способности</h3><p>Уже тогда он видел несправедливость в том, что демонов ставят ниже ангелов.</p></div>
+<div><small>Угроза</small><h3>Решение Шепфы</h3><p>Шепфа почувствовал исходящую от него опасность и попытался его уничтожить. Ангельскую сторону убить не получилось.</p></div>
+<div><small>Раскол</small><h3>Свет отделён от тьмы</h3><p>Светлую часть отделили от тёмной. Так появился Бонт.</p></div>
+<div><small>Заточение</small><h3>Башня и пелена тьмы</h3><p>Несколько минут в год он видел жизнь родителей, пока они не умерли.</p></div>
+<div><small>Сезон 1</small><h3>Антагонист и возможный возлюбленный</h3><p>Он входит в историю как главный противник и как один из возможных фаворитов героини.</p></div>
+<div><small>Сезон 2</small><h3>Бонт и ритуал</h3><p>Появляется светлая сторона. В финале Мальбонте проводит ритуал, и две половины воссоединяются.</p></div>
+<div><small>Сезон 3</small><h3>Война и выбор</h3><p>Финал зависит от решений игрока: от союза с Мальбонте до его гибели.</p></div>
+</div>
+</section>
+
+<section class="wide rv" id="path" style="padding:8vh 0;scroll-margin-top:60px">
+<span class="eyebrow">Глава IV</span>
+<h2>Путь через «Секрет Небес»</h2>
+<div class="st"><h3>Сезон 1</h3><p>Мальбонте появляется как главный антагонист и вместе с тем как один из возможных фаворитов героини.</p></div>
+<div class="st"><h3>Сезон 2</h3><p>На сцену выходит Бонт, светлая сторона. В финале сезона Мальбонте проводит ритуал, и две его половины воссоединяются.</p></div>
+<div class="st"><h3>Сезон 3</h3><p>Война, выбор стороны и финал, который зависит от решений игрока: от союза с Мальбонте до его гибели.</p></div>
+</section>
+</div>
+
+<div class="mq r" aria-hidden="true"><div>За таких, как я, молиться нельзя &nbsp;—&nbsp; Тьма разрушает, а не созидает &nbsp;—&nbsp; Боль, ошибки и разочарование учат лучше всего &nbsp;—&nbsp; За таких, как я, молиться нельзя &nbsp;—&nbsp; Тьма разрушает, а не созидает &nbsp;—&nbsp; Боль, ошибки и разочарование учат лучше всего &nbsp;—&nbsp;</div></div>
+
+<div class="wrap">
+<section class="wide rv" id="nature" style="padding:12vh 0 8vh;scroll-margin-top:60px">
+<span class="eyebrow">Глава V</span>
+<h2>Характер</h2>
+<details open><summary>Амбиция</summary><p>Он не принимает мир таким, какой он есть. Для него порядок, в котором демонов ставят ниже ангелов, — ошибка, которую надо исправить, даже если цена высока.</p></details>
+<details><summary>Двойственность</summary><p>В нём живут две стороны, и он первым задаёт героине неудобный вопрос: осталась бы она собой, если бы из неё убрали всё дурное?</p></details>
+<details><summary>Безжалостность</summary><p>Он не просит жалости и сам никого не жалеет. На пути к цели он готов не щадить никого, и лишь героиня стоит для него особняком.</p></details>
+<details><summary>Одиночество</summary><p>Башня, заточение, родители, на которых можно было смотреть лишь несколько минут в год. Его резкость выросла из этой пустоты.</p></details>
+<details><summary>Убеждённость</summary><p>Он уверен, что боль, ошибки и разочарование учат лучше всего остального, и строит на этом свои решения.</p></details>
+</section>
+
+<section class="row rev rv" id="look" style="scroll-margin-top:60px">
+<div><span class="eyebrow">Глава VI</span><h2>Образ</h2>
+<p>Тёмно-бордовый камзол с серебряной окантовкой, чёрный мех на плече, плетёный кожаный шнур. За спиной крылья цвета запёкшейся крови с бирюзовым свечением по краю.</p>
+<div class="chips"><span>чёрные волосы</span><span>тёмные брови</span><span>бордо и серебро</span><span>бирюзовое свечение</span></div>
+<div class="pal" style="margin-top:2.4em"><i style="background:#5a1020" data-n="бордо"></i><i style="background:#c9ccd6" data-n="серебро"></i><i style="background:#0a0810" data-n="чёрный"></i><i style="background:#38e8d4" data-n="бирюза"></i></div>
+<p style="margin-top:3.4em"></p></div>
+<figure class="fr p23"><img src="assets/master.png" alt="Мальбонте в полный рост"></figure>
+</section>
+
+<section class="wide rv" style="padding:8vh 0;text-align:center">
+<h2>Мысли Мальбонте</h2><p style="margin:0 auto;color:var(--mu);font-size:16px">Его слова из игры, пересказанные своими словами</p>
+<div class="cr"><blockquote class="on">Боль, ошибки и разочарование учат лучше всего.</blockquote>
+<blockquote>Бонт не был отдельным человеком, поэтому его не вернуть: он никуда не уходил.</blockquote>
+<blockquote>Он говорит о себе: за таких, как я, молиться нельзя.</blockquote>
+<blockquote>Тьма разрушает, а не созидает.</blockquote></div>
+<div class="dots"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button><button aria-label="4"></button></div>
+</section>
+<section class="wide rv" style="padding:6vh 0 10vh">
+<h2>Из тени к свету</h2>
+<p>Три кадра одного движения: он выходит из темноты, делает шаг и протягивает руку.</p>
+<div class="tri">
+<figure><div class="fr p23"><img src="assets/frame-a.png" alt="Из тени"></div><figcaption>Из тени</figcaption></figure>
+<figure><div class="fr p23"><img src="assets/frame-mid.png" alt="Шаг вперёд"></div><figcaption>Шаг вперёд</figcaption></figure>
+<figure><div class="fr p23"><img src="assets/frame-b.png" alt="Протянутая рука"></div><figcaption>Протянутая рука</figcaption></figure>
+</div></section>
+
+<section class="row rv">
+<figure class="fr p23"><video src="assets/hand.mp4" poster="assets/hand.png" data-v muted loop playsinline></video></figure>
+<div><h2>Протянутая рука</h2>
+<p>В нём слишком много и тьмы, и света. Он не просит жалости и сам никого не жалеет, но иногда протягивает руку, и это решает всё.</p></div>
+</section>
+<section class="wide rv" id="ends" style="padding:4vh 0 10vh;scroll-margin-top:60px">
+<span class="eyebrow">Финал</span>
+<h2>Развязки</h2>
+<p>Чем закончится история, зависит от выбора игрока и от близости с Мальбонте. Внимание: дальше спойлеры.</p>
+<div class="eg hid" id="eg">
+<div><span class="no">I</span><h3>Путь ангела</h3><p>При высокой связи Мальбонте и Шепфа договариваются, а героиня становится ангелом и советником Цитадели.</p></div>
+<div><span class="no">II</span><h3>Путь демона</h3><p>Мальбонте заточает Шепфу, и героиня становится демоном и советником Цитадели.</p></div>
+<div><span class="no">III</span><h3>Путь Мальбонте</h3><p>Он заточает Шепфу, а героиня становится Несущей Равновесие.</p></div>
+<div><span class="no">IV</span><h3>Низкая связь</h3><p>Мальбонте погибает, и героиня, выбрав сторону, становится советником Цитадели.</p></div>
+</div>
+<button class="rev-btn" id="rb">Показать спойлеры</button>
+</section>
+</div>
+
+<section class="end rv">
+<figure class="fr p23"><video src="assets/final.mp4" poster="assets/final.png" data-v muted loop playsinline></video></figure>
+<h2>Мальбонте</h2><p>Тот, за кого нельзя молиться.</p>
+</section>
+<footer><b>Мальбонте</b>Сын ангела и демона · «Клуб Романтики: Секрет Небес»<br><a href="#top" onclick="scrollTo({top:0});return false">Вернуться к началу</a></footer>
+<audio id="au" src="assets/theme.mp3" loop></audio>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* прелоадер */
+addEventListener('load',()=>setTimeout(()=>$('#pre').classList.add('out'),500));
+setTimeout(()=>$('#pre').classList.add('out'),3500);
+/* появление и видео */
+const io=new IntersectionObserver(es=>es.forEach(e=>{const t=e.target;
+if(t.tagName==='VIDEO'){e.isIntersecting?t.play().catch(()=>{}):t.pause()}
+else if(e.isIntersecting){t.classList.add('in');io.unobserve(t)}}),{threshold:.15});
+$$('.rv,video[data-v],.bar,.tl>div').forEach(e=>io.observe(e));
+const hv=$('#hv');hv.parentNode.onclick=()=>{hv.currentTime=0;hv.play()};
+$$('img,video').forEach(m=>m.addEventListener('error',()=>m.parentNode.dataset.miss=m.getAttribute('src')));
+/* музыка */
+const au=$('#au'),mu=$('#mu');au.volume=.5;
+mu.onclick=()=>{const on=au.paused;on?au.play().catch(()=>{}):au.pause();mu.textContent=on?'♪ Выключить музыку':'♪ Включить музыку';mu.setAttribute('aria-pressed',on)};
+/* заголовок по буквам */
+const h1=$('h1');h1.innerHTML=[...h1.textContent].map((c,i)=>`<span style="animation-delay:${i*80}ms">${c}</span>`).join('');
+/* перья */
+const fx=$('#fx');
+if(!RM)for(let i=0;i<10;i++){const e=document.createElement('i');e.className='fe';const z=26+Math.random()*34;
+e.style.cssText=`left:${Math.random()*100}%;width:${z}px;height:${z*1.6}px;animation-duration:${16+Math.random()*16}s;animation-delay:-${Math.random()*28}s`;fx.appendChild(e)}
+/* искры-частицы */
+(()=>{if(RM)return;const c=$('#em'),x=c.getContext('2d');let W,H,ps=[];
+const rs=()=>{W=c.width=innerWidth;H=c.height=innerHeight};rs();addEventListener('resize',rs);
+const mk=()=>({x:Math.random()*W,y:H+10,r:.6+Math.random()*1.8,v:.25+Math.random()*.7,d:(Math.random()-.5)*.4,a:.2+Math.random()*.5,t:Math.random()<.35?'56,232,212':'179,40,58'});
+for(let i=0;i<46;i++){const p=mk();p.y=Math.random()*H;ps.push(p)}
+(function f(){x.clearRect(0,0,W,H);for(const p of ps){p.y-=p.v;p.x+=p.d+Math.sin(p.y/60)*.2;if(p.y<-10)Object.assign(p,mk());
+x.beginPath();x.fillStyle=`rgba(${p.t},${p.a})`;x.shadowBlur=8;x.shadowColor=`rgb(${p.t})`;x.arc(p.x,p.y,p.r,0,7);x.fill()}requestAnimationFrame(f)})()})();
+/* прогресс, навигация, наверх, параллакс */
+const pg=$('#pg'),nv=$('nav'),up=$('#up'),pv=$$('video[data-par]');let tk=0;
+addEventListener('scroll',()=>{if(tk)return;tk=requestAnimationFrame(()=>{tk=0;const m=document.documentElement.scrollHeight-innerHeight;
+pg.style.transform=`scaleX(${Math.min(1,scrollY/m)})`;nv.classList.toggle('on',scrollY>innerHeight*.5);up.classList.toggle('on',scrollY>innerHeight);
+if(!RM)pv.forEach(v=>{const r=v.parentNode.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)v.style.transform=`translateY(${(r.top+r.height/2-innerHeight/2)*-.12}px)`})})},{passive:true});
+up.onclick=()=>scrollTo({top:0});
+const lk=$$('nav a');
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)lk.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+lk.forEach(a=>{const t=document.querySelector(a.getAttribute('href'));t&&so.observe(t)});
+/* счётчики */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const n=+e.target.dataset.n,t0=performance.now();
+(function u(t){const k=Math.min(1,(t-t0)/1400);e.target.textContent=Math.round(n*(1-Math.pow(1-k,3)));k<1&&requestAnimationFrame(u)})(t0)}),{threshold:.6});
+$$('b[data-n]').forEach(b=>co.observe(b));
+/* цитаты */
+const qs=$$('.cr blockquote'),ds=$$('.dots button');let qi=0,qt;
+function go(i){qi=(i+qs.length)%qs.length;qs.forEach((q,k)=>q.classList.toggle('on',k===qi));ds.forEach((d,k)=>d.classList.toggle('on',k===qi))}
+function auto(){clearInterval(qt);qt=setInterval(()=>go(qi+1),6500)}
+ds.forEach((d,k)=>d.onclick=()=>{go(k);auto()});auto();
+/* вкладки свет/тьма */
+$$('.tabs button').forEach(b=>b.onclick=()=>{$$('.tabs button').forEach(x=>x.classList.toggle('on',x===b));$$('.pane').forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t))});
+/* спойлеры */
+const rb=$('#rb'),eg=$('#eg');rb.onclick=()=>{const h=eg.classList.toggle('hid');rb.textContent=h?'Показать спойлеры':'Скрыть спойлеры'};
+/* наклон карточек и свечение курсора */
+if(matchMedia('(hover:hover)').matches&&!RM){
+$$('.fr').forEach(f=>{f.addEventListener('pointermove',e=>{const r=f.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;f.style.transform=`perspective(900px) rotateY(${x*7}deg) rotateX(${-y*7}deg)`});f.addEventListener('pointerleave',()=>f.style.transform='')});
+$$('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.15}px,${(e.clientY-r.top-r.height/2)*.25}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+const gl=$('#gl');addEventListener('pointermove',e=>gl.style.transform=`translate(${e.clientX}px,${e.clientY}px)`,{passive:true})}else $('#gl').remove();
+</script></body></html>
