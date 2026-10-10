@@ -4,6 +4,9 @@
 <title>Мальбонте — сын ангела и демона</title>
 <meta name="description" content="Мальбонте из «Клуба Романтики: Секрет Небес»: первый выживший сын ангела и демона. История, характер, хроника, образ и все развязки.">
 <meta name="theme-color" content="#060508">
+<link rel="icon" href="logo.ico" type="image/x-icon" sizes="any">
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<noscript><style>.rv{opacity:1!important;transform:none!important}#pre{display:none}</style></noscript>
 <meta property="og:title" content="Мальбонте — сын ангела и демона">
 <meta property="og:description" content="Свет и тьма в одном существе. Досье на самого противоречивого героя «Секрета Небес».">
 <meta property="og:image" content="assets/portrait.png">
@@ -16,14 +19,14 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--tx);font:400 18px/1.85 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--red);color:#fff}
 h1,h2,h3,blockquote{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;color:#fff;line-height:1.05}
-h1{font-size:clamp(60px,9vw,128px);font-style:italic}
+h1{font-size:clamp(52px,8.6vw,120px);font-style:italic;white-space:nowrap}
 h2{font-size:clamp(38px,5vw,64px);margin-bottom:.45em}
 p{max-width:34em}p+p{margin-top:1em}
 .eyebrow{display:block;font:600 13px/1 Manrope,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--red);margin-bottom:1.4em}
 .sub{font-family:"Cormorant Garamond",serif;font-size:clamp(24px,3vw,34px);color:var(--teal);margin:.3em 0 1em}
 .wrap{max-width:1120px;margin:0 auto;padding:0 6vw}
 .wide{max-width:980px;margin:0 auto}
-.hero{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center;max-width:1180px;margin:0 auto;padding:6vh 6vw}
+.hero{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:5vw;align-items:center;max-width:1320px;margin:0 auto;padding:6vh 6vw}
 .btn{display:inline-block;margin-top:1.8em;padding:14px 30px;border:1px solid var(--red);border-radius:99px;color:#fff;text-decoration:none;font-weight:500;transition:background .3s,box-shadow .3s,transform .2s}
 .btn:hover,.btn:focus-visible{background:var(--red);outline:none;box-shadow:0 0 40px #b3283a88}
 .btn.ghost{margin-left:12px;border-color:#ffffff33}
@@ -63,7 +66,7 @@ footer a{color:var(--teal);text-decoration:none}
 [data-miss]{min-height:220px;display:grid;place-items:center;border:1px dashed var(--red)}
 [data-miss]::after{content:"Не найден файл: " attr(data-miss);padding:16px;text-align:center}
 
-body>*:not(.fx):not(#gl):not(nav):not(#mu):not(#pg):not(#up):not(#pre):not(#em){position:relative;z-index:1}
+body>*:not(.fx):not(#gl):not(nav):not(#mu):not(#pg):not(#up):not(#pre):not(#em):not(#lb){position:relative;z-index:1}
 .fx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 #em{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
 .fe{position:absolute;top:-12vh;background:url(assets/feathers.png) center/contain no-repeat;opacity:.5;will-change:transform;animation:fall linear infinite}
@@ -162,7 +165,29 @@ details p{margin-top:.8em;animation:up .5s}
 .st{transition:background .4s,padding .4s}
 .st:hover{background:linear-gradient(90deg,#b3283a14,transparent);padding-left:14px}
 
+/* досье */
+.dos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff1a;border:1px solid #ffffff1a;border-radius:16px;overflow:hidden;margin-bottom:10vh}
+.dos div{background:var(--bg2);padding:26px 28px;transition:background .3s}
+.dos div:hover{background:#150f1a}
+.dos small{display:block;font:600 11px Manrope,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.dos b{font:500 26px/1.15 "Cormorant Garamond",serif;color:#fff}
+/* тест */
+.qz{margin-top:4vh;min-height:250px;border:1px solid #b3283a66;border-radius:16px;padding:36px;background:var(--bg2)}
+.qz small{display:block;font:600 12px Manrope,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.qz h3{font-size:34px;margin-bottom:.7em}
+.qz .o{display:grid;gap:12px;max-width:30em}
+.qz button{font:500 17px Manrope,sans-serif;text-align:left;padding:15px 22px;border-radius:12px;border:1px solid #ffffff2e;background:none;color:var(--tx);cursor:pointer;transition:all .3s}
+.qz button:hover,.qz button:focus-visible{border-color:var(--teal);background:#38e8d412;outline:none}
+.qz p{margin-bottom:1.4em}
+/* лайтбокс */
+#lb{position:fixed;inset:0;z-index:90;background:#000000ec;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;cursor:zoom-out;padding:4vh 4vw}
+#lb.on{opacity:1;visibility:visible}
+#lb img{max-width:100%;max-height:92vh;border-radius:12px;box-shadow:0 0 0 1px #b3283a88,0 0 120px #b3283a44}
+.fr img{cursor:zoom-in}
+#mu.hint{animation:ring 2.2s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 #b3283a99}70%,100%{box-shadow:0 0 0 16px #b3283a00}}
 @media(max-width:860px){
+.dos{grid-template-columns:1fr 1fr}.qz{padding:24px}.qz h3{font-size:28px}
 .hero,.row,.two{grid-template-columns:1fr}.hero{gap:5vh;padding-top:8vh}.hv{height:auto;width:min(340px,86vw)}
 .row{padding:8vh 0}.row.rev>:first-child{order:0}.st{grid-template-columns:1fr;gap:4px}
 .tri{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:68%;overflow-x:auto;scroll-snap-type:x mandatory}.tri>*{scroll-snap-align:center}
@@ -170,12 +195,13 @@ nav{justify-content:flex-start;overflow-x:auto}.eg{grid-template-columns:1fr}.fa
 @media(prefers-reduced-motion:reduce){.rv{transform:none;opacity:1}h1 span,.mq div,.fe,.hero .sub,.hero p,.hero .btn{animation:none}html{scroll-behavior:auto}#em{display:none}}
 </style></head><body>
 <div id="pre"><i></i><span>Мальбонте</span></div>
-<button id="mu" aria-pressed="false">♪ Включить музыку</button>
+<div id="lb" role="dialog" aria-label="Просмотр изображения"><img alt=""></div>
+<button id="mu" class="hint" aria-pressed="false">♪ Включить музыку</button>
 <button id="up" aria-label="Наверх">↑</button>
 <div id="pg"></div><canvas id="em"></canvas><div class="fx" id="fx"></div><div id="gl"></div>
 <nav><a href="#story">История</a><a href="#sides">Две стороны</a><a href="#chron">Хроника</a><a href="#path">Путь</a><a href="#nature">Характер</a><a href="#look">Образ</a><a href="#ends">Развязки</a></nav>
 
-<header class="hero">
+<header class="hero" id="top">
 <div>
 <span class="eyebrow">Секрет Небес</span>
 <h1>Мальбонте</h1>
@@ -196,6 +222,14 @@ nav{justify-content:flex-start;overflow-x:auto}.eg{grid-template-columns:1fr}.fa
 <figure class="fr p23"><img src="assets/portrait.png" alt="Портрет Мальбонте"></figure>
 </section>
 <section class="facts rv"><div><b data-n="3">0</b><span>сезона истории с его участием</span></div><div><b data-n="2">0</b><span>стороны одного существа</span></div><div><b data-n="1">0</b><span>выживший ребёнок ангела и демона</span></div></section>
+<section class="dos rv">
+<div><small>Имя</small><b>Мальбонте</b></div>
+<div><small>Происхождение</small><b>Сын ангела и демона</b></div>
+<div><small>Особенность</small><b>Первый из выживших</b></div>
+<div><small>Светлая сторона</small><b>Бонт, мальчик с башни</b></div>
+<div><small>Роль в истории</small><b>Антагонист и возможный возлюбленный</b></div>
+<div><small>Игра</small><b>Клуб Романтики: Секрет Небес</b></div>
+</section>
 </main>
 
 <section class="band"><video src="assets/sky.mp4" poster="assets/sky.png" data-v data-par muted loop playsinline></video>
@@ -277,6 +311,12 @@ nav{justify-content:flex-start;overflow-x:auto}.eg{grid-template-columns:1fr}.fa
 <blockquote>Тьма разрушает, а не созидает.</blockquote></div>
 <div class="dots"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button><button aria-label="4"></button></div>
 </section>
+<section class="wide rv" id="quiz" style="padding:8vh 0">
+<span class="eyebrow">Испытание</span>
+<h2>Свет или тьма?</h2>
+<p>Три вопроса для интереса: к какой половине Мальбонте ты ближе.</p>
+<div class="qz" id="qz"></div>
+</section>
 <section class="wide rv" style="padding:6vh 0 10vh">
 <h2>Из тени к свету</h2>
 <p>Три кадра одного движения: он выходит из темноты, делает шаг и протягивает руку.</p>
@@ -309,7 +349,7 @@ nav{justify-content:flex-start;overflow-x:auto}.eg{grid-template-columns:1fr}.fa
 <figure class="fr p23"><video src="assets/final.mp4" poster="assets/final.png" data-v muted loop playsinline></video></figure>
 <h2>Мальбонте</h2><p>Тот, за кого нельзя молиться.</p>
 </section>
-<footer><b>Мальбонте</b>Сын ангела и демона · «Клуб Романтики: Секрет Небес»<br><a href="#top" onclick="scrollTo({top:0});return false">Вернуться к началу</a></footer>
+<footer><b>Мальбонте</b>Сын ангела и демона · «Клуб Романтики: Секрет Небес»<br><a href="#top" id="toTop">Вернуться к началу</a></footer>
 <audio id="au" src="assets/theme.mp3" loop></audio>
 
 <script>
@@ -327,7 +367,7 @@ const hv=$('#hv');hv.parentNode.onclick=()=>{hv.currentTime=0;hv.play()};
 $$('img,video').forEach(m=>m.addEventListener('error',()=>m.parentNode.dataset.miss=m.getAttribute('src')));
 /* музыка */
 const au=$('#au'),mu=$('#mu');au.volume=.5;
-mu.onclick=()=>{const on=au.paused;on?au.play().catch(()=>{}):au.pause();mu.textContent=on?'♪ Выключить музыку':'♪ Включить музыку';mu.setAttribute('aria-pressed',on)};
+mu.onclick=()=>{mu.classList.remove('hint');const on=au.paused;on?au.play().catch(()=>{}):au.pause();mu.textContent=on?'♪ Выключить музыку':'♪ Включить музыку';mu.setAttribute('aria-pressed',on)};
 /* заголовок по буквам */
 const h1=$('h1');h1.innerHTML=[...h1.textContent].map((c,i)=>`<span style="animation-delay:${i*80}ms">${c}</span>`).join('');
 /* перья */
@@ -368,4 +408,18 @@ if(matchMedia('(hover:hover)').matches&&!RM){
 $$('.fr').forEach(f=>{f.addEventListener('pointermove',e=>{const r=f.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;f.style.transform=`perspective(900px) rotateY(${x*7}deg) rotateX(${-y*7}deg)`});f.addEventListener('pointerleave',()=>f.style.transform='')});
 $$('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.15}px,${(e.clientY-r.top-r.height/2)*.25}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
 const gl=$('#gl');addEventListener('pointermove',e=>gl.style.transform=`translate(${e.clientX}px,${e.clientY}px)`,{passive:true})}else $('#gl').remove();
+/* возврат к началу */
+$('#toTop').onclick=e=>{e.preventDefault();scrollTo({top:0,behavior:RM?'auto':'smooth'})};
+/* лайтбокс */
+const lb=$('#lb'),lbi=lb.querySelector('img');
+$$('.fr img').forEach(m=>m.addEventListener('click',()=>{lbi.src=m.src;lbi.alt=m.alt;lb.classList.add('on')}));
+lb.onclick=()=>lb.classList.remove('on');
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+/* тест */
+(()=>{const Q=[["Мир несправедлив. Что ты сделаешь?","Попробую договориться","Перепишу правила сам"],["Тебе больно. Как ты поступишь?","Найду того, кто протянет руку","Сделаю из боли урок"],["Что в тебе сильнее?","Милосердие","Воля"]],box=$('#qz');let i=0,s=0;
+function draw(){if(i<Q.length){const q=Q[i];box.innerHTML=`<small>Вопрос ${i+1} из ${Q.length}</small><h3>${q[0]}</h3><div class="o"><button data-v="1">${q[1]}</button><button data-v="0">${q[2]}</button></div>`;
+box.querySelectorAll('button').forEach(b=>b.onclick=()=>{s+=+b.dataset.v;i++;draw()})}
+else{const l=s>=2;box.innerHTML=`<small>Результат</small><h3>${l?'Ты ближе к Бонту':'Ты ближе к Мальбонте'}</h3><p>${l?'Ты веришь, что мир можно исправить словом и вовремя протянутой рукой. Это светлая сторона, которую так и не смогли убить.':'Ты не ждёшь, что мир изменится сам. Воля и боль, из которой вырастает уверенность: порядок надо переписать.'}</p><button class="again">Пройти ещё раз</button>`;
+box.querySelector('.again').onclick=()=>{i=0;s=0;draw()}}}
+draw()})();
 </script></body></html>
